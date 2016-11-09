@@ -1,0 +1,286 @@
+body {
+	font-family: 'acumin-pro', sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #88847F;
+}
+.logo a{
+	background: url(img/logo-hardgraft.png) no-repeat;
+	width: 77px;
+	height: 50px;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.title {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 48px;
+	color: #2D2825;
+	line-height: 1.2;
+	text-align: center;
+}
+	.title--left {
+		text-align: left;
+	}
+	.title--section {
+		/* bord */
+	}
+	.title--small {
+		font-size: 30px;
+	}
+	.title--quote {
+		font-size: 30px;
+		font-style: italic;
+		color: rgba(46, 41, 38, .8);
+	}
+.titlesans {
+	font-family: 'acumin-pro', sans-serif;
+	font-size: 24px;
+	color: #2D2825;
+	font-weight: 700;	
+	line-height: 1.2;
+}
+.titlesans--small {
+	font-size: 18px;
+}
+.titlesans--up {
+	font-size: 12px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.title a, .titlesans a {
+	text-decoration: none;
+	color: #2D2825;
+}
+.hide {
+	display: none;
+}
+.p--light {
+	font-weight: 300;/* Sofia */
+	color: #2d2825;
+}
+/* les liens */
+.link {
+	font-size: 12px;
+	color: #2E2825;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.link--arrow {
+	border-bottom:1px solid #2E2825;
+	padding: 8px 0;
+}
+.link--arrow:before {
+	content: "> ";
+}
+.link--more {
+	border: 1px solid #2E2825;
+	padding: 19px 20px 20px 48px;
+	background: url(img/seeallarrow.png) no-repeat;
+	background-position: 20px center;
+	border-radius: 5px;
+}
+/* LES SECTIONS */
+.section {}
+.section--banner {
+	background: url(img/iphonecase-big.png) right center no-repeat,
+	url(img/bg-banner.png);
+}
+.section--main{
+	background: url(img/bg-glass.png) no-repeat left top,
+	url(img/bg-bag.png) no-repeat right bottom #faf8f6;
+}
+.section--incarnation{
+	background: url(img/bg-glass2.png) no-repeat left bottom,
+	url(img/bg-men.png) no-repeat right 290px,
+	url(img/bg-incarnation.png) no-repeat center top;
+	background-size: auto, auto, 100% 290px;
+	padding-top: 290px;
+}
+.incarnation {
+	padding-top: 85px;
+	background:	url(img/icon-designer.png) 
+	no-repeat center top;
+}
+	.incarnation--details {
+		background-image: url(img/icon-details.png);
+	}
+	.incarnation--leather {
+		background-image: url(img/icon-leather.png);
+	}
+.section--footer {
+	background: url(img/bg-footer.png) 
+	no-repeat 70% bottom #363433;
+}
+.credit {
+	background-color:#1A1817;
+	background-color:rgba(26,24,23,.4); 
+}
+
+/* NAV */
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu__el {
+	float: left;
+	margin-left: 40px;
+
+}
+.menu__el a {
+	/* style */
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2D2825;
+	
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	opacity: .6;
+}
+.menu__el--now a,
+.menu__el a:hover,
+.menu__el a:focus {
+	background: url(img/bg-nav.png) repeat-x left 60px;
+	opacity: 1;
+	outline: 0;
+}
+.menu__el--shop {
+	width: 70px;
+	height: 40px;
+	background-color:#d9c6ac;
+	border-radius: 2px;
+}
+
+
+/* LAYOUT */
+.container {
+	width: 1200px;
+	margin:0 auto;
+}
+	.container--banner {
+		width: 580px;
+		padding-right: 620px;
+	}
+.section--header {
+	height: 80px;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	margin: 0;
+}
+.menu {
+	float: right;
+}
+.section--banner {
+	height: 260px;
+	padding: 160px 0 177px;
+}
+.title--quote {
+	width: 450px;
+	margin: 35px auto;
+	position: relative;
+}
+	.title--quote:before {
+		content: "“";
+		font-size: 80px;
+		color: #EAE9E9;
+		color: red;
+		position: absolute;
+		top: -21px;
+		left: -40px;
+	}
+	.title--quote:after {
+		content: "”";
+		font-size: 80px;
+		color: #EAE9E9;
+		color: red;
+		position: absolute;
+		right: 10px;
+		top: 30px;
+	}
+
+
+.products {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.products__el {
+	width: 374px;
+	margin: 0 39px 40px 0;
+	float: left;
+}
+.products__el--big {
+	width: 580px;
+}
+
+.button--add{
+background-color: #d9c6ac;
+padding: 10px 15px;	
+}
+.button--whishlis{}
+/*
+n=0,1,2,3,4,etc.
+exemple: 2n+1
+2*0+1=1
+2*1+1=3
+2*2+1=5
+2*3+1=7
+2,5,8,11,14,17,etc.
+*/
+
+.products__el:nth-child(3n+2){
+	margin-right: 0;
+}
+.products__info{
+	background: #FFF;
+	padding: 30px;
+}
+.titlesans--products {
+	margin-top: 0;
+}
+.products__img {
+	display: block;
+}
+.section--main{
+	padding: 100px 0 80px;
+}
+
+.center {
+	text-align: center;
+}
+
+.col4{
+	width: 374px;
+	margin: 0 39px 40px 0;
+	float: left;
+}
+	.col4:nth-child(4){
+		margin-right: 0;
+	}
+
+.col3{
+	width: 270px;
+	float: left;
+}
+.section--incarnation {
+	padding-bottom: 80px;
+}
+.fr { float: right; }
+.fl { float: left; }
+
+.credit {
+	clear: both;
+	height: 37px;
+	line-height: 37px;
+}
